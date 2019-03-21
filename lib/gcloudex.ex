@@ -17,7 +17,7 @@ defmodule GCloudex do
     # Es un hack temporal, se obtiene las credenciales del proyecto principal
     case credentials do
       credentials when is_map(credentials) -> 
-        Map.get("project_id")
+        Map.get(credentials, "project_id")
       credentials when is_list(credentials) -> 
         credentials
         |> List.first()
