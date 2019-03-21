@@ -20,7 +20,7 @@ defmodule GCloudex do
         Map.get("project_id")
       credentials when is_list(credentials) -> 
         credentials
-        |> List.firts()
+        |> List.first()
         |> Map.get("project_id")
     end
   end
